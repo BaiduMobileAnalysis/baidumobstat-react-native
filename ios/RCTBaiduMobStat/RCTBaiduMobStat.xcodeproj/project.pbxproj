@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E68A4F81F1DD1FC0073A18D /* RCTBaiduMobStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E68A4F71F1DD1FC0073A18D /* RCTBaiduMobStat.m */; };
+		7E68A4F91F1DD1FC0073A18D /* RCTBaiduMobStat.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 7E68A4F61F1DD1FC0073A18D /* RCTBaiduMobStat.h */; };
+		7E68A5191F1DD8210073A18D /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5171F1DD8210073A18D /* libBaiduMobStat.a */; };
+		7E68A5211F1DE8BD0073A18D /* BaiduMobStat.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 7E68A5181F1DD8210073A18D /* BaiduMobStat.h */; };
+		7E68A5241F1DEA2D0073A18D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5231F1DEA2D0073A18D /* JavaScriptCore.framework */; };
+		7E68A52A1F1DEA4C0073A18D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5291F1DEA4C0073A18D /* CoreGraphics.framework */; };
+		7E68A52C1F1DEA520073A18D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A52B1F1DEA520073A18D /* CoreTelephony.framework */; };
+		7E68A52E1F1DEA590073A18D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A52D1F1DEA590073A18D /* SystemConfiguration.framework */; };
+		7E68A5301F1DEA5E0073A18D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A52F1F1DEA5E0073A18D /* CoreLocation.framework */; };
+		7E68A5321F1DEA670073A18D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5311F1DEA670073A18D /* Security.framework */; };
+		7E68A5341F1DEA6D0073A18D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5331F1DEA6D0073A18D /* Foundation.framework */; };
+		7E68A5361F1DEA720073A18D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5351F1DEA720073A18D /* UIKit.framework */; };
+		7E68A5381F1DEA840073A18D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5371F1DEA840073A18D /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E68A4F11F1DD1FC0073A18D /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				7E68A5211F1DE8BD0073A18D /* BaiduMobStat.h in Copy Files */,
+				7E68A4F91F1DD1FC0073A18D /* RCTBaiduMobStat.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E68A4F31F1DD1FC0073A18D /* libRCTBaiduMobStat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTBaiduMobStat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E68A4F61F1DD1FC0073A18D /* RCTBaiduMobStat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTBaiduMobStat.h; sourceTree = "<group>"; };
+		7E68A4F71F1DD1FC0073A18D /* RCTBaiduMobStat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBaiduMobStat.m; sourceTree = "<group>"; };
+		7E68A5171F1DD8210073A18D /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
+		7E68A5181F1DD8210073A18D /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
+		7E68A5231F1DEA2D0073A18D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7E68A5291F1DEA4C0073A18D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E68A52B1F1DEA520073A18D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7E68A52D1F1DEA590073A18D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E68A52F1F1DEA5E0073A18D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7E68A5311F1DEA670073A18D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7E68A5331F1DEA6D0073A18D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E68A5351F1DEA720073A18D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E68A5371F1DEA840073A18D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E68A4F01F1DD1FC0073A18D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E68A5381F1DEA840073A18D /* WebKit.framework in Frameworks */,
+				7E68A5361F1DEA720073A18D /* UIKit.framework in Frameworks */,
+				7E68A5341F1DEA6D0073A18D /* Foundation.framework in Frameworks */,
+				7E68A5321F1DEA670073A18D /* Security.framework in Frameworks */,
+				7E68A5301F1DEA5E0073A18D /* CoreLocation.framework in Frameworks */,
+				7E68A52E1F1DEA590073A18D /* SystemConfiguration.framework in Frameworks */,
+				7E68A52C1F1DEA520073A18D /* CoreTelephony.framework in Frameworks */,
+				7E68A52A1F1DEA4C0073A18D /* CoreGraphics.framework in Frameworks */,
+				7E68A5241F1DEA2D0073A18D /* JavaScriptCore.framework in Frameworks */,
+				7E68A5191F1DD8210073A18D /* libBaiduMobStat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E68A4EA1F1DD1FC0073A18D = {
+			isa = PBXGroup;
+			children = (
+				7E68A4F51F1DD1FC0073A18D /* RCTBaiduMobStat */,
+				7E68A4F41F1DD1FC0073A18D /* Products */,
+				7E68A5221F1DEA2C0073A18D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E68A4F41F1DD1FC0073A18D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E68A4F31F1DD1FC0073A18D /* libRCTBaiduMobStat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E68A4F51F1DD1FC0073A18D /* RCTBaiduMobStat */ = {
+			isa = PBXGroup;
+			children = (
+				7E68A5171F1DD8210073A18D /* libBaiduMobStat.a */,
+				7E68A5181F1DD8210073A18D /* BaiduMobStat.h */,
+				7E68A4F61F1DD1FC0073A18D /* RCTBaiduMobStat.h */,
+				7E68A4F71F1DD1FC0073A18D /* RCTBaiduMobStat.m */,
+			);
+			path = RCTBaiduMobStat;
+			sourceTree = "<group>";
+		};
+		7E68A5221F1DEA2C0073A18D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E68A5371F1DEA840073A18D /* WebKit.framework */,
+				7E68A5351F1DEA720073A18D /* UIKit.framework */,
+				7E68A5331F1DEA6D0073A18D /* Foundation.framework */,
+				7E68A5311F1DEA670073A18D /* Security.framework */,
+				7E68A52F1F1DEA5E0073A18D /* CoreLocation.framework */,
+				7E68A52D1F1DEA590073A18D /* SystemConfiguration.framework */,
+				7E68A52B1F1DEA520073A18D /* CoreTelephony.framework */,
+				7E68A5291F1DEA4C0073A18D /* CoreGraphics.framework */,
+				7E68A5231F1DEA2D0073A18D /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E68A4F21F1DD1FC0073A18D /* RCTBaiduMobStat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E68A4FC1F1DD1FC0073A18D /* Build configuration list for PBXNativeTarget "RCTBaiduMobStat" */;
+			buildPhases = (
+				7E68A4EF1F1DD1FC0073A18D /* Sources */,
+				7E68A4F01F1DD1FC0073A18D /* Frameworks */,
+				7E68A4F11F1DD1FC0073A18D /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTBaiduMobStat;
+			productName = RCTBaiduMobStat;
+			productReference = 7E68A4F31F1DD1FC0073A18D /* libRCTBaiduMobStat.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E68A4EB1F1DD1FC0073A18D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Rurui Ye";
+				TargetAttributes = {
+					7E68A4F21F1DD1FC0073A18D = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3BJYKWHMM4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7E68A4EE1F1DD1FC0073A18D /* Build configuration list for PBXProject "RCTBaiduMobStat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E68A4EA1F1DD1FC0073A18D;
+			productRefGroup = 7E68A4F41F1DD1FC0073A18D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E68A4F21F1DD1FC0073A18D /* RCTBaiduMobStat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E68A4EF1F1DD1FC0073A18D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E68A4F81F1DD1FC0073A18D /* RCTBaiduMobStat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E68A4FA1F1DD1FC0073A18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E68A4FB1F1DD1FC0073A18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E68A4FD1F1DD1FC0073A18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3BJYKWHMM4;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTBaiduMobStat",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7E68A4FE1F1DD1FC0073A18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3BJYKWHMM4;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCTBaiduMobStat",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E68A4EE1F1DD1FC0073A18D /* Build configuration list for PBXProject "RCTBaiduMobStat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E68A4FA1F1DD1FC0073A18D /* Debug */,
+				7E68A4FB1F1DD1FC0073A18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E68A4FC1F1DD1FC0073A18D /* Build configuration list for PBXNativeTarget "RCTBaiduMobStat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E68A4FD1F1DD1FC0073A18D /* Debug */,
+				7E68A4FE1F1DD1FC0073A18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E68A4EB1F1DD1FC0073A18D /* Project object */;
+}
