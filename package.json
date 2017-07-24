@@ -6,11 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react",
-    "native",
-    "BaiduMobStat"
-  ],
+  "keywords": ["react", "native", "BaiduMobStat"],
   "author": "yerurui",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
