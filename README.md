@@ -96,7 +96,7 @@ libicucore.tbd
 	```
 	allprojects {
    		repositories {
-        	jcenter()
+       	jcenter()
     	}
 	}
 	```
