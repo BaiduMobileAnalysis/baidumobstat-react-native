@@ -1,4 +1,5 @@
 # baidumobstat-react-native
+##iOS
 - 新建一个React Native工程，参考[React Native 官网](https://facebook.github.io/react-native/)
 
      ```bash
@@ -31,3 +32,82 @@ libicucore.tbd
      ```
  
 - 在App.js 内使用对应的接口
+
+##Android
+* 新建一个React Native工程，参考[React Native 官网](https://facebook.github.io/react-native/)，添加百度移动统计react native插件支持
+	
+	```
+	yarn add baidumobstat-react-native
+	```
+* 配置AndroidManifest.xml
+	
+	添加权限：
+	
+	```
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.BLUETOOTH" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	```
+	
+	添加数据配置：
+	
+	```
+	     <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="your appkey" /> 
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+	```
+	
+* 配置gradle
+	
+	project build.gradle，android studio项目默认已经配置好：
+	
+	```
+	allprojects {
+   		repositories {
+        	jcenter()
+    	}
+	}
+	```
+	module build.gradle，需要添加如下配置：
+	
+	标准统计SDK:
+	
+	```
+	dependencies {
+    	compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+	}
+	```
+	
+* 在App.js 内使用对应的接口

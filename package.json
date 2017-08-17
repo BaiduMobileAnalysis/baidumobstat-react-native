@@ -1,13 +1,28 @@
 {
   "name": "baidumobstat-react-native",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Native Plugin for BaiduMobStat",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react", "native", "BaiduMobStat"],
-  "author": "yerurui",
+  "keywords": [
+    "react",
+    "native",
+    "BaiduMobStat"
+  ],
+  "author": "yerurui, yangjie",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaiduMobileAnalysis/baidumobstat-react-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BaiduMobileAnalysis/baidumobstat-react-native/issues"
+  },
+  "homepage": "https://github.com/BaiduMobileAnalysis/baidumobstat-react-native#readme"
 }
