@@ -1,6 +1,6 @@
 {
   "name": "baidumobstat-react-native",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Native Plugin for BaiduMobStat",
   "main": "index.js",
   "scripts": {
