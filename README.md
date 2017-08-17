@@ -10,11 +10,12 @@
      ```
 
 - 在iOS工程的Linked Frameworks and Libraries, 加入以下依赖
-```
-libz.tbd
-libc++.tbd
-libicucore.tbd
-```
+	
+	```
+	libz.tbd
+	libc++.tbd
+	libicucore.tbd
+	```
 
 - 在 iOS 工程中如果找不到头文件可能要在 TARGETS-> BUILD SETTINGS -> Search Paths -> Header Search Paths 添加如下路径
 
