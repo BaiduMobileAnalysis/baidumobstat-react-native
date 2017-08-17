@@ -95,9 +95,9 @@ libicucore.tbd
 	
 	```
 	allprojects {
-   		repositories {
-       	jcenter()
-    	}
+   	    repositories {
+           jcenter()
+        }
 	}
 	```
 	module build.gradle，需要添加如下配置：
