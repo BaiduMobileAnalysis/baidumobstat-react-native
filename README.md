@@ -1,5 +1,5 @@
 # baidumobstat-react-native
-##iOS
+## iOS
 - 新建一个React Native工程，参考[React Native 官网](https://facebook.github.io/react-native/)
 
      ```bash
@@ -32,7 +32,8 @@ libicucore.tbd
      ```
  
 - 在App.js 内使用对应的接口
-##Android
+
+## Android
 * 新建一个React Native工程，参考[React Native 官网](https://facebook.github.io/react-native/)，添加百度移动统计react native插件支持
 	
 	```
