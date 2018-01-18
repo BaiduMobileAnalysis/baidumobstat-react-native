@@ -1,4 +1,6 @@
-package com.baidu.mobstat;
+package com.baidu.reactnativemobstat;
+
+import com.baidu.mobstat.StatService;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

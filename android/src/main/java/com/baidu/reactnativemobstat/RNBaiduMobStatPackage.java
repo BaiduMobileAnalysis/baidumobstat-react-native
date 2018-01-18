@@ -1,4 +1,4 @@
-package com.baidu.mobstat;
+package com.baidu.reactnativemobstat;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
