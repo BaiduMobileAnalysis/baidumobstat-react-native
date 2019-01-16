@@ -13,42 +13,6 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(setUserId:(NSString *)userId) {
-    [[BaiduMobStat defaultStat] setUserId:userId];
-}
-
-RCT_EXPORT_METHOD(setGlobalExtraInfo:(NSDictionary *)extraDictionary) {
-    BaiduMobStatExtraInfo *extraInfo = [[BaiduMobStatExtraInfo alloc] init];
-    for (NSString *key in extraDictionary) {
-        NSString *value = [extraDictionary objectForKey:key];
-        if (![key length] || ![value length]) {
-            continue;
-        }
-        if ([key isEqualToString:@"V1"]) {
-            extraInfo.v1 = value;
-        } else if ([key isEqualToString:@"V2"]) {
-            extraInfo.v2 = value;
-        } else if ([key isEqualToString:@"V3"]) {
-            extraInfo.v3 = value;
-        } else if ([key isEqualToString:@"V4"]) {
-            extraInfo.v4 = value;
-        } else if ([key isEqualToString:@"V5"]) {
-            extraInfo.v5 = value;
-        } else if ([key isEqualToString:@"V6"]) {
-            extraInfo.v6 = value;
-        } else if ([key isEqualToString:@"V7"]) {
-            extraInfo.v7 = value;
-        } else if ([key isEqualToString:@"V8"]) {
-            extraInfo.v8 = value;
-        } else if ([key isEqualToString:@"V9"]) {
-            extraInfo.v9 = value;
-        } else if ([key isEqualToString:@"V10"]) {
-            extraInfo.v10 = value;
-        }
-    }
-    [[BaiduMobStat defaultStat] setGlobalExtraInfo:extraInfo];
-}
-
 RCT_EXPORT_METHOD(onEvent:(NSString *)eventId eventLabel:(NSString *)eventLabel) {
     [[BaiduMobStat defaultStat] logEvent:eventId eventLabel: eventLabel];
 }

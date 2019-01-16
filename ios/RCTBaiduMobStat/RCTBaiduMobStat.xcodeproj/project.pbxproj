@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45FE15FE21D231E600BA2090 /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE15FD21D231E600BA2090 /* libBaiduMobStat.a */; };
 		7E68A4F81F1DD1FC0073A18D /* RCTBaiduMobStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E68A4F71F1DD1FC0073A18D /* RCTBaiduMobStat.m */; };
 		7E68A4F91F1DD1FC0073A18D /* RCTBaiduMobStat.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 7E68A4F61F1DD1FC0073A18D /* RCTBaiduMobStat.h */; };
+		7E68A5191F1DD8210073A18D /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5171F1DD8210073A18D /* libBaiduMobStat.a */; };
 		7E68A5211F1DE8BD0073A18D /* BaiduMobStat.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 7E68A5181F1DD8210073A18D /* BaiduMobStat.h */; };
 		7E68A5241F1DEA2D0073A18D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5231F1DEA2D0073A18D /* JavaScriptCore.framework */; };
 		7E68A52A1F1DEA4C0073A18D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E68A5291F1DEA4C0073A18D /* CoreGraphics.framework */; };
@@ -38,10 +38,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		45FE15FD21D231E600BA2090 /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
 		7E68A4F31F1DD1FC0073A18D /* libRCTBaiduMobStat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTBaiduMobStat.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E68A4F61F1DD1FC0073A18D /* RCTBaiduMobStat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTBaiduMobStat.h; sourceTree = "<group>"; };
 		7E68A4F71F1DD1FC0073A18D /* RCTBaiduMobStat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBaiduMobStat.m; sourceTree = "<group>"; };
+		7E68A5171F1DD8210073A18D /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
 		7E68A5181F1DD8210073A18D /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
 		7E68A5231F1DEA2D0073A18D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		7E68A5291F1DEA4C0073A18D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,10 +65,10 @@
 				7E68A5321F1DEA670073A18D /* Security.framework in Frameworks */,
 				7E68A5301F1DEA5E0073A18D /* CoreLocation.framework in Frameworks */,
 				7E68A52E1F1DEA590073A18D /* SystemConfiguration.framework in Frameworks */,
-				45FE15FE21D231E600BA2090 /* libBaiduMobStat.a in Frameworks */,
 				7E68A52C1F1DEA520073A18D /* CoreTelephony.framework in Frameworks */,
 				7E68A52A1F1DEA4C0073A18D /* CoreGraphics.framework in Frameworks */,
 				7E68A5241F1DEA2D0073A18D /* JavaScriptCore.framework in Frameworks */,
+				7E68A5191F1DD8210073A18D /* libBaiduMobStat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		7E68A4F51F1DD1FC0073A18D /* RCTBaiduMobStat */ = {
 			isa = PBXGroup;
 			children = (
-				45FE15FD21D231E600BA2090 /* libBaiduMobStat.a */,
+				7E68A5171F1DD8210073A18D /* libBaiduMobStat.a */,
 				7E68A5181F1DD8210073A18D /* BaiduMobStat.h */,
 				7E68A4F61F1DD1FC0073A18D /* RCTBaiduMobStat.h */,
 				7E68A4F71F1DD1FC0073A18D /* RCTBaiduMobStat.m */,

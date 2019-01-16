@@ -43,24 +43,8 @@ typedef enum _BaiduMobStatFeedTrackStrategy {
 } BaiduMobStatFeedTrackStrategy;
 
 /**
- 全局扩展信息
- */
-@interface BaiduMobStatExtraInfo : NSObject
-@property (nonatomic, copy) NSString* v1;
-@property (nonatomic, copy) NSString* v2;
-@property (nonatomic, copy) NSString* v3;
-@property (nonatomic, copy) NSString* v4;
-@property (nonatomic, copy) NSString* v5;
-@property (nonatomic, copy) NSString* v6;
-@property (nonatomic, copy) NSString* v7;
-@property (nonatomic, copy) NSString* v8;
-@property (nonatomic, copy) NSString* v9;
-@property (nonatomic, copy) NSString* v10;
-@end
-
-/**
  百度移动应用统计接口
- 当前版本 4.9.8_18
+ 当前版本 4.9.5_18
  */
 @interface BaiduMobStat : NSObject
 /**
@@ -193,20 +177,6 @@ typedef enum _BaiduMobStatFeedTrackStrategy {
  @param appKey 用户在mtj网站上创建应用，获取对应的appKey
  */
 - (void)startWithAppId:(NSString *)appKey;
-
-/**
- 设置全局附加信息
- 此API调用后的日志信息才会有全局附加信息
- 若多次调用，后续调用会覆盖之前的信息，以最后一次调用为准
- 
- @param info 全局附加信息
- */
-- (void)setGlobalExtraInfo:(BaiduMobStatExtraInfo*) info;
-
-/**
- 清空全局附加信息
- */
-- (void)clearGlobalExtraInfo;
 
 /**
  记录一次事件的点击，eventId请在网站上创建。未创建的evenId记录将无效。

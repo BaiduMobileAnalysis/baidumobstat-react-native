@@ -1,6 +1,6 @@
 {
   "name": "baidumobstat-react-native",
-  "version": "1.1.6",
+  "version": "1.1.4",
   "description": "React Native Plugin for BaiduMobStat",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "native",
     "BaiduMobStat"
   ],
-  "author": "baidumobstat",
+  "author": "yerurui, yangjie",
   "license": "ISC",
   "dependencies": {},
   "directories": {
