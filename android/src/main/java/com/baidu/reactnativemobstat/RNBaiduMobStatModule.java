@@ -1,5 +1,8 @@
 package com.baidu.reactnativemobstat;
 
+import android.text.TextUtils;
+
+import com.baidu.mobstat.ExtraInfo;
 import com.baidu.mobstat.StatService;
 
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -9,6 +12,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableMapKeySetIterator;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by yangjie18 on 17/8/17.
@@ -28,6 +32,69 @@ public class RNBaiduMobStatModule extends ReactContextBaseJavaModule {
         return "BaiduMobStat";
     }
 
+    /**
+     * 设置用户id。设置后会在保存在本地，如果需要清除设置，传入null
+     */
+    @ReactMethod
+    public void setUserId(String userId) {
+        StatService.setUserId(this.reactContext, userId);
+    }
+
+    /**
+     * 设置全局附加信息，设置的附加信息会组装在日志头部。只需设置一次，设置后，相关数据会保留，每次发送的日志都会携带此信息
+     *
+     * 最多设置10个key，key固定为V1-V10，value只能是String格式
+     *
+     * 传入null则清除历史设置的信息
+     */
+    @ReactMethod
+    public void setGlobalExtraInfo(ReadableMap readableMap) {
+        ExtraInfo extraInfo = new ExtraInfo();
+        HashMap<String, String> infoMap = getConvertedMap(readableMap);
+        for (Map.Entry<String, String> entry : infoMap.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
+            if (TextUtils.isEmpty(key) || TextUtils.isEmpty(value)) {
+                continue;
+            }
+            switch (key) {
+                case "V1":
+                    extraInfo.setV1(value);
+                    break;
+                case "V2":
+                    extraInfo.setV2(value);
+                    break;
+                case "V3":
+                    extraInfo.setV3(value);
+                    break;
+                case "V4":
+                    extraInfo.setV4(value);
+                    break;
+                case "V5":
+                    extraInfo.setV5(value);
+                    break;
+                case "V6":
+                    extraInfo.setV6(value);
+                    break;
+                case "V7":
+                    extraInfo.setV7(value);
+                    break;
+                case "V8":
+                    extraInfo.setV8(value);
+                    break;
+                case "V9":
+                    extraInfo.setV9(value);
+                    break;
+                case "V10":
+                    extraInfo.setV10(value);
+                    break;
+                default:
+                    break;
+            }
+        }
+        StatService.setGlobalExtraInfo(this.reactContext, extraInfo);
+    }
+
     @ReactMethod
     public void onPageStart(String name) {
         StatService.onPageStart(this.reactContext, name);
@@ -45,6 +112,7 @@ public class RNBaiduMobStatModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void onEvent(String eventId, String label) {
+
         StatService.onEvent(this.reactContext, eventId, label);
     }
 
@@ -77,7 +145,7 @@ public class RNBaiduMobStatModule extends ReactContextBaseJavaModule {
     public void onEventDurationWithAttributes(String eventId, String label, Integer milliseconds,
                                               ReadableMap readableMap) {
         StatService.onEventDuration(this.reactContext, eventId, label, milliseconds.longValue(),
-                                    getConvertedMap(readableMap));
+                getConvertedMap(readableMap));
     }
 
     private HashMap<String, String> getConvertedMap(ReadableMap readableMap) {

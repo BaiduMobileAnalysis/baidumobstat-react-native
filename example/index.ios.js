@@ -9,6 +9,16 @@ import { AppRegistry, StyleSheet, Text, View, Button } from "react-native";
 import BaiduMobStat from "baidumobstat-react-native";
 
 export default class example extends Component {
+  setUserId() {
+    BaiduMobStat.setUserId("testUserId");
+  }
+
+  setGlobalExtraInfo() {
+    BaiduMobStat.setGlobalExtraInfo({
+      "V1":"value1",
+      "V2":"value2"
+    });
+  }
   onEvent() {
     BaiduMobStat.onEvent("event1", "事件一");
   }
@@ -53,6 +63,8 @@ export default class example extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Button onPress={() => this.setUserId()} title="设置userId" />
+        <Button onPress={() => this.setGlobalExtraInfo()} title="设置ExtraInfo" />
         <Button onPress={() => this.onEvent()} title="事件一" />
         <Button onPress={() => this.onEventDuration()} title="事件二" />
         <Button onPress={() => this.onEventStart()} title="事件三开始" />
