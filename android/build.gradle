@@ -1,12 +1,16 @@
 apply plugin: 'com.android.library'
 
+def safeExtGet(prop, fallback) {
+  rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
 android {
     compileSdkVersion 25
-    buildToolsVersion "23.0.1"
+    // buildToolsVersion "23.0.1"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion safeExtGet('targetSdkVersion', 23)
     }
     buildTypes {
         release {
@@ -17,6 +21,6 @@ android {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.baidu.mobstat:mtj-sdk:latest.integration'
 }
