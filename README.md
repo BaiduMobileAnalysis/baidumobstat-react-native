@@ -20,7 +20,7 @@
 - 在 iOS 工程中如果找不到头文件可能要在 TARGETS-> BUILD SETTINGS -> Search Paths -> Header Search Paths 添加如下路径
 
     ```
-    $(SRCROOT)/../node_modules/jpush-react-native/ios/RCTBaiduMobStat/RCTBaiduMobStat
+    $(SRCROOT)/../node_modules/baidumobstat-react-native/ios/RCTBaiduMobStat/RCTBaiduMobStat
     ```
     
 - 打开ios下的工程，在AppDelegate.m内添加百度移动统计的启动代码

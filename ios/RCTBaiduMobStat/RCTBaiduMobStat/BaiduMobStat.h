@@ -60,7 +60,7 @@ typedef enum _BaiduMobStatFeedTrackStrategy {
 
 /**
  百度移动应用统计接口
- 当前版本 4.9.8_18
+ 当前版本 5.1.1_18
  */
 @interface BaiduMobStat : NSObject
 /**
@@ -154,6 +154,13 @@ typedef enum _BaiduMobStatFeedTrackStrategy {
 @property (nonatomic, assign) BOOL enableViewControllerAutoTrack;
 
 /**
+ 设置是否优先使用“类名”进行UIViewController的页面统计（V5.0.0新增）
+ 默认为NO，即优先使用页面title进行统计，没有title情况下再使用类名统计
+ （推荐）设置为YES，即使用类名进行页面统计，统计效果更准确、聚合度更高
+ */
+@property (nonatomic, assign) BOOL trackViewControllerWithClassName;
+
+/**
  设置控件点击event事件是否监控（V4.8.3新增）
  默认为YES
  */
@@ -180,11 +187,27 @@ typedef enum _BaiduMobStatFeedTrackStrategy {
 @property (nonatomic, assign) BOOL enableLaunchRefererTrack;
 
 /**
+ 设置Crash日志中附带的信息
+ 长度限制256字节，超出截断
+ */
+@property (nonatomic, copy) NSString *crashExtraInfo;
+
+/**
  获取统计对象的实例
  
  @return 一个统计对象实例
  */
 + (BaiduMobStat *)defaultStat;
+
+/**
+ 设置用户自定义的用户属性信息，在startWithAppId之前调用
+ 设置一次UserPorperty后，属性与该设备绑定。传入新的UserPorperty将替换老的UserPorperty内容。
+ 传入nil，可清空标记。
+ key值为用户提前在网站创建的“属性名称”，若没有提前创建，则无统计效果。最多传入100个key值，超出部分无效
+ 每个value长度限制256字节
+ 调用例子见demo工程
+ */
+- (void)setUserProperty:(NSDictionary *)userProperty;
 
 /**
  设置应用的appkey，启动统计SDK。
@@ -286,16 +309,6 @@ typedef enum _BaiduMobStatFeedTrackStrategy {
 - (void)pageviewEndWithName:(NSString *)name;
 
 /**
- 记录UIWebView中的行为（需要在网页的JS代码中进行相应配置，详见文档与Demo程序）
- 在UIWebView的代理方法：
- - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
- 中，调用此接口，传入request参数，开始统计JS中的操作
- 
- @param request UIWebView的请求参数
- */
-- (void)webviewStartLoadWithRequest:(NSURLRequest *)request;
-
-/**
  记录WkWebView中的行为（需要在网页的JS代码中进行相应配置，详见文档与Demo程序）
  在WkWebview的代理方法:
  -(void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
@@ -388,12 +401,6 @@ UIViewInternalDefine
 @end
 
 /**
- 百度移动统计UIWebView Category
- */
-@interface UIWebView (BaiduMobStatWebView)
-@end
-
-/**
  百度移动统计NSInvocation Category
  */
 @interface NSInvocation (BaiduMobStat)
@@ -462,7 +469,6 @@ UITableViewInternalDefine
 void import_BaiduMobStatViewController ();
 void import_BaiduMobStatWindow ();
 void import_BaiduMobStatView ();
-void import_BaiduMobStatWebView ();
 void import_BaiduMobStatWKWebView ();
 void import_BaiduMobStatNSInvocation ();
 void import_BaiduMobStatScrollView ();
